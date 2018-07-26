@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon --exec babel-node src/index.js",
+    "build": "./node_modules/.bin/babel src -s -D -d dist",
+    "start": "node dist",
+    "prestart": "npm run -s build"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-date": "^1.0.3",
+    "graphql-tools": "^3.0.5",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "faker": "^4.1.0",
+    "nodemon": "^1.18.0"
+  }
+}
