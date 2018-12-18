@@ -1,1 +1,1 @@
-# ReactNative-GraphQL-MongoDB-LogInDemo
+# ReactNative-GraphQL-MongoDB-Auth-Demo
